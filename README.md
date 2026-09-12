@@ -24,7 +24,7 @@ Budget	Bounded perturbation of the transaction amount
 
 Restricting the attack surface to a single manipulable feature is the point, not a limitation. It reflects what an attacker can actually do at transaction time, and it makes the resulting robustness estimate meaningful rather than pessimistic-by-construction.
 
-Method
+## Methodology
 Attack: vectorised grid search over the perturbation budget for TransactionAmt, evaluating all candidate perturbations in parallel rather than looping per transaction.
 Compute: PyTorch with CUDA (NVIDIA GTX 1650).
 Victim models: the three model families trained in the parent project — logistic regression, XGBoost, and a PyTorch MLP.
@@ -38,7 +38,7 @@ This connects directly to a finding from the parent project, where SHAP analysis
 
 These results are preliminary and cover a partial budget range. The full sweep is the next milestone.
 
-Roadmap
+## Roadmap
  Threat model definition
  GPU environment (PyTorch + CUDA)
  Vectorised grid-search attack
@@ -47,20 +47,23 @@ Roadmap
  Security Evaluation Index (SEI) computation
  Cross-model robustness comparison (LR vs XGBoost vs MLP)
  Analysis of the accuracy–robustness trade-off
-Repository structure
+ 
+## Repository structure
+```
 .
 ├── notebooks/        # Threat model exploration and attack experiments
 ├── src/              # Attack implementation
 ├── results/          # Figures and metrics
 ├── requirements.txt
 └── README.md
-
-Reproducing 
+```
+## Reproducing 
+```bash
 git clone https://github.com/lakshyakaviya/adversarial-robustness-fraud
 cd adversarial-robustness-fraud
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-
+```
 Trained models and feature artifacts are produced by the parent project. The IEEE-CIS dataset is not committed to this repository; download it from the Kaggle competition page.
 
 Reference
