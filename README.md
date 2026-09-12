@@ -55,8 +55,7 @@ Repository structure
 ├── requirements.txt
 └── README.md
 
-Reproducing
-bash
+Reproducing 
 git clone https://github.com/lakshyakaviya/adversarial-robustness-fraud
 cd adversarial-robustness-fraud
 python -m venv .venv && source .venv/bin/activate
