@@ -3,13 +3,13 @@ Status: work in progress — preliminary results below. The threat model, attack
 
 A follow-on study to credit-card-fraud-detection, which built a leakage-safe fraud detection pipeline on the IEEE-CIS dataset. That project asked how well can we detect fraud? This one asks the question that matters once a model is deployed: what happens when the fraudster knows the model exists and adapts?
 
-Motivation
+## Motivation
 
 Standard model evaluation assumes the data-generating process is static. Fraud violates that assumption by construction — fraudsters observe which transactions get blocked and adjust. A model with excellent held-out PR-AUC can still be trivially evadable if its decision boundary depends on features the attacker controls.
 
 The question this project answers is not "is the model accurate?" but "how much accuracy does an adapting adversary cost us, and which model architecture degrades most gracefully?"
 
-Threat model
+## Threat model
 
 Adversarial ML research on images typically assumes an unconstrained perturbation budget under an L-p norm. That assumption is wrong for tabular fraud data, because most features are not attacker-controllable. A fraudster cannot retroactively change the card's transaction history, the issuing bank, or the device fingerprint.
 
