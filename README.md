@@ -72,3 +72,5 @@ Jin Xiao, Yuhang Tian, Yanlin Jia, Xiaoyi Jiang, Lean Yu, Shouyang Wang (2023) B
 
 Related
 [credit-card-fraud-detection](https://github.com/lakshyakaviya/credit-card-fraud-detection) — the fraud detection pipeline this study attacks.
+
+*Built by Lakshya Kaviya — github.com/lakshyakaviya · lakshyakaviya2003@gmail.com*
