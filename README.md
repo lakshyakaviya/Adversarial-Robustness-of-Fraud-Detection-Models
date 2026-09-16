@@ -1,7 +1,7 @@
 # Adversarial-Robustness-of-Fraud-Detection-Models
 Status: work in progress — preliminary results below. The threat model, attack implementation, and first evasion experiments are complete. The full degradation sweep and cross-model comparison are in progress.
 
-A follow-on study to credit-card-fraud-detection, which built a leakage-safe fraud detection pipeline on the [IEEE-CIS](https://www.kaggle.com/competitions/ieee-fraud-detection) dataset. That project asked how well can we detect fraud? This one asks the question that matters once a model is deployed: what happens when the fraudster knows the model exists and adapts?
+A follow-on study to credit-card-fraud-detection, which built a leakage-safe fraud detection pipeline on the [IEEE-CIS Dataset](https://www.kaggle.com/competitions/ieee-fraud-detection). That project asked how well can we detect fraud? This one asks the question that matters once a model is deployed: what happens when the fraudster knows the model exists and adapts?
 
 ## Motivation
 
