@@ -71,4 +71,4 @@ Reference
 Jin Xiao, Yuhang Tian, Yanlin Jia, Xiaoyi Jiang, Lean Yu, Shouyang Wang (2023) Black-Box Attack-Based Security Evaluation Framework for Credit Card Fraud Detection Models. INFORMS Journal on Computing
 
 Related
-credit-card-fraud-detection — the fraud detection pipeline this study attacks.
+[credit-card-fraud-detection](https://github.com/lakshyakaviya/credit-card-fraud-detection) — the fraud detection pipeline this study attacks.
