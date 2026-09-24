@@ -1,0 +1,11 @@
+data/
+venv/
+.venv/
+models/
+results/
+.kaggle/
+__pycache__/
+*.zip
+*.pkl
+*.pt
+.ipynb_checkpoints/
